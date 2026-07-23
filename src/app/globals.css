@@ -10,9 +10,12 @@
   --font-app: var(--font-latin);
 }
 
-/* Smooth scrolling + a comfortable base line-height for the whole site */
+/* Smooth scrolling + accessibility text scaling.
+   TextSizeControls sets --text-scale (0.9 / 1 / 1.1); because Tailwind uses
+   rem units, scaling the root font-size scales ALL text proportionally. */
 html {
   scroll-behavior: smooth;
+  font-size: calc(100% * var(--text-scale, 1));
 }
 
 /* The page background uses our light-blue "sky" tone from the Tailwind config */
