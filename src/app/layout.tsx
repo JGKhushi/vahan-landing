@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { allFontVariables } from "./fonts";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
 import "./globals.css";
 
 // Metadata = the info browsers/search engines read (browser tab title, description).
@@ -15,8 +17,10 @@ export default function RootLayout({
   children: React.ReactNode; // React.ReactNode = "any renderable content"
 }) {
   return (
-    <html lang="en">
-      <body className="font-app antialiased">{children}</body>
+    <html lang="en" className={allFontVariables}>
+      <body className="font-app antialiased">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }

@@ -4,6 +4,12 @@
 @tailwind components; /* any reusable component classes */
 @tailwind utilities;  /* all the utility classes like p-4, text-center, bg-gov-navy */
 
+/* Default value for the dynamic app font (English/Latin).
+   LanguageProvider overrides this variable at runtime when the language changes. */
+:root {
+  --font-app: var(--font-latin);
+}
+
 /* Smooth scrolling + a comfortable base line-height for the whole site */
 html {
   scroll-behavior: smooth;
