@@ -1,0 +1,15 @@
+/* These three lines pull in Tailwind's generated styles.
+   @tailwind is a special instruction PostCSS+Tailwind replaces with real CSS. */
+@tailwind base;       /* Tailwind's sensible defaults / CSS reset */
+@tailwind components; /* any reusable component classes */
+@tailwind utilities;  /* all the utility classes like p-4, text-center, bg-gov-navy */
+
+/* Smooth scrolling + a comfortable base line-height for the whole site */
+html {
+  scroll-behavior: smooth;
+}
+
+/* The page background uses our light-blue "sky" tone from the Tailwind config */
+body {
+  background-color: #eef4fb;
+}
