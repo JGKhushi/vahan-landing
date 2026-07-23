@@ -6,8 +6,8 @@ built with **Next.js (App Router) + TypeScript + Tailwind CSS**.
 > Educational rebuild only — not affiliated with the Government of India.
 
 ## Live Demo
-- **Deployed:** _add your Vercel URL here_
-- **Repo:** _add your GitHub URL here_
+- **Deployed:** https://vahan-landing.vercel.app/
+- **Repo:** https://github.com/JGKhushi/vahan-landing
 
 ## Run locally
 ```bash
