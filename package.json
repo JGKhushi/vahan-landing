@@ -2,11 +2,11 @@
   "name": "vahan-landing",
   "version": "1.0.0",
   "private": true,
-  "description": "Rebuild of the VAHAN 4.0 Citizen Services landing page — multilingual, responsive, dynamic fonts.",
+  "description": "Rebuild of the VAHAN 4.0 Citizen Services landing page \u2014 multilingual, responsive, dynamic fonts.",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "next lint"
   },
   "dependencies": {
